@@ -3,7 +3,7 @@ Project for art exhibition at Village Arts Kohukohu.
 Lighting effects for ceramic art pieces by John Parker.
 This work consists of ceramic cones approx 200 mm high fixed to wall.
 Four colour sequenced lights will illuminate them in a relatively dark corner of the gallery.
-THe project will use high powered rgbs driven by constant current source femtobuck drivers.
+The project will use high powered rgbs driven by constant current source femtobuck drivers.
 The power supply is from an old ASX computer with ample 650 watts.
 
 The rgbs will be sequenced using pwm pins from an Arduino Due
