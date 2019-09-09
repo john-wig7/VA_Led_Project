@@ -3,7 +3,7 @@ Project for art exhibition at Village Arts Kohukohu.
 
 Lighting design and build for an installation by New Zealand ceramic artist John Parker commencing 2 November 2019.
 
-The installation consists of a cluster of white ceramic cones approx 200 mm high fixed to a white gallery wall.
+The installation consists of a cluster of white ceramic cones approx 200 mm high fixed on their bases to a white gallery wall.
 
 Four colour sequenced lights will illuminate the cones in a relatively dark corner of the gallery.
 The project will use high powered RGB LEDs driven by constant current source, femtobuck drivers.
