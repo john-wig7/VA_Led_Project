@@ -6,12 +6,12 @@ Four colour sequenced lights will illuminate them in a relatively dark corner of
 The project will use high powered RGB LEDs driven by constant current source, femtobuck drivers.
 The power supply is from an old ASX computer with an ample 650 watts.
 
-The rgbs will be sequenced using pwm pins from an Arduino Due.
+The LEDs will be sequenced using pwm pins from an Arduino Due.
 I have chosen the Due because:
 
 a) I have one!
 b) It has the necessary 12 pwm output pins 
-c) It can use 12 bit pwm resolution (only 8 bit on uno)
+c) It has 12-bit pwm resolution (compared to 8-bit on Arduino Uno)
 d) The 3.3 volt output pins suit the femtobuck driver
 
 I have considered using an ESP32 and this is currently a secondary design branch with a learning curve, but has th epotential to be a cost effective and higher performing substitutue for the Due. The ESP32 also has the interesting micropython capability.
