@@ -17,7 +17,7 @@ I have chosen the Due because:
 3) It has 12-bit pwm resolution (compared to 8-bit on Arduino Uno)
 4) The 3.3 volt output pins suit the femtobuck driver
 
-I am also investgating using an ESP32 as a secondary design branch. It has the potential to be a cost effective and higher performing substitutue for the Due. The ESP32 also has micropython capability and I am intersted in learning and exploring this seystem.
+I am also investgating using an ESP32 as a secondary design branch. It has the potential to be a cost effective and higher performing substitutue for the Due. The ESP32 also has micropython capability and I am interested in learning and exploring this seystem.
 
 The coding challenges for this project are:
 
@@ -27,5 +27,6 @@ The coding challenges for this project are:
 3) whether to use classes or public functions to control each channel
 4) using state machine and sequencing techniques
 5) perception of colour - logarithmic vs linear increments
+6) potentially using sensor to detect viewer presence and responding in the sequence accordingly
 
 
