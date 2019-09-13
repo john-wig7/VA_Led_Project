@@ -1,17 +1,16 @@
-# Coding Development
+# ESP32
 
-The working codes in this branch relate to coding the Arduino Due with the arduino IDE
+The working codes in this branch relate to coding the ESP32 with micropython
 
-**State Machine design**
+**Learning Curve**
 
-The code needs to maintain a record of the current state of 12 colour channels at the same time, and another channel for reading the sensor. Each colour channel will change PWM values with each clock and the sensor will read a value. The smoothness of the led transitions are dependent on the efficiency of the updating code and the frequency of the clock.
-The example code here shows a mechanism for maintaining state values of each channel.
-Another design method that I wish to explore is creating an object class for each channel which can maintain its own state value with a method for incrementing the PWM for the object's designated ardnuino pin.
+Using the ESP32 is a new learning curve, although I am more familiary with python than I am am with C++/Java (arduino IDE).
+THe advantage of using the ESP32 for this project is its significantly more powerful cpu in comparison to the Due. 
+Setting the PWM frequency is very easy using the ESP32 which should allow more work to be done in between transitions while maintaining the perception of transition smoothness. These advantages over the Due in the end may not be perceived in the final product, and it is likely that both board can do this job equally effectively. 
 
-**Colour perception**
+**First stages**
 
-The perception of changes to colour is not linear, therefore a straight line step up and down through PWM values will not provide a smooth visual transition. Perception of smooth transitions requires a logarithmic growth algorithm.
-The coding question is whether to use an array of values from 0-4095 (at 12-bit resolution), prepopulated by the algorithm or make the calculation at each clock cycle. My intuition suggests the former, although it will be a very large matrix!
+The first steps in exploring the possibility of the ESP32 is learning the envioronment and the methods of the REPL which creates the interface with the files system on the ESP32. A python programme can be saved and uploaded to the ESP32 and if it replaces boot.py or main.py then the code will run automatically, just as the C++ code runs on an arduino.
 
 
 
