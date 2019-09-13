@@ -7,7 +7,7 @@ The installation consists of a cluster of white ceramic cones approx 200 mm high
 
 Four colour sequenced lights will illuminate the cones in a relatively dark corner of the gallery.
 The project will use high powered RGB LEDs driven by constant current source, femtobuck drivers.
-The power supply is from an old ASX computer with an ample 650 watts.
+The power supply is from an old ASX computer with an ample 650 watts!
 
 The LEDs will be sequenced using pwm pins on an Arduino Due microprocessor.
 I have chosen the Due because:
