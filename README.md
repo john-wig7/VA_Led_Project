@@ -10,7 +10,7 @@ Setting the PWM frequency is very easy using the ESP32 which should allow more w
 
 **First stages**
 
-The first steps in exploring the possibility of the ESP32 is learning the micropython environnment and the methods of the REPL which creates the interface with the files system on the ESP32. A python programme can be saved and uploaded to the ESP32 and if it replaces boot.py or main.py then the code will run automatically, just as the C++ code runs on an arduino.
+The first steps in exploring the possibility of the ESP32 is learning the micropython environnment and the methods of the REPL which creates the interface with the ESP32 file system. A python programme can be saved and uploaded to the ESP32 and if it replaces boot.py or main.py then the code will run automatically, just as the C++ code runs on an arduino.
 
 
 
