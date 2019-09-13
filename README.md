@@ -1,31 +1,18 @@
-# VA_Led_Project
-Project for art exhibition at Village Arts Kohukohu.
+# Coding Development
 
-Lighting design and build for an installation by New Zealand ceramic artist John Parker commencing 2 November 2019.
+The working codes in this branch relate to coding the Arduino Due with the arduino IDE
 
-The installation consists of a cluster of white ceramic cones approx 200 mm high fixed on their bases to a white gallery wall.
+**State Machine design
 
-Four colour sequenced lights will illuminate the cones in a relatively dark corner of the gallery.
-The project will use high powered RGB LEDs driven by constant current source, femtobuck drivers.
-The power supply is from an old ASX computer with an ample 650 watts.
+The design needs to maintain a record of the current state of 12 colour channels at the same time, and another channel for reading the sensor. Each colour channel will change PWM values with each clock and the sensor will read a value. The smoothness of the led transitions are dependent on the efficiency of the updating code and the frequency of the clock.
+The example code here shows a mechanism for maintaining state values of each channel.
+Another design method that I wish to explore is creating an object class for each channel which can maintain its own state value with a method for incrementing the PWM for the objects own pin.
 
-The LEDs will be sequenced using pwm pins on an Arduino Due microprocessor.
-I have chosen the Due because:
+**Colour perception
 
-a) I have one!
-b) It has the necessary 12 pwm output pins 
-c) It has 12-bit pwm resolution (compared to 8-bit on Arduino Uno)
-d) The 3.3 volt output pins suit the femtobuck driver
+The perception of changes to colour is not linear, therefore a straight line step up and down through PWM values will not provide a smooth visual transition. The perception qaparently requires a logarithmic growth and I have an algorithm to model a more even perecption.
+The coding question is whether to use an array constant of values from 0-4095, prepopulated by the algorithm or make the calculation at each clock cycle. My intuition suggests the former, although it will be a vvery large matrix!
 
-I have considered using an ESP32 as a secondary design branch. It has the potential to be a cost effective and higher performing substitutue for the Due. The ESP32 also has micropython capability.
 
-The coding challenges for the Due are:
-
-a) simultaneously sequencing 12 rgb channels
-b) ensuring smooth fading at lower power levels
-      - whether analog.write can achieve this or alternatively, directly controlling frequency and duty cycle
-c) whether to use classes or public functions to control each channel
-d) using state machine and sequencing techniques
-e) perception of colour - logarithmic vs linear increments
 
 
