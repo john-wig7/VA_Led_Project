@@ -1,5 +1,5 @@
 ## VA_Led_Project
-Project for art exhibition at Village Arts Kohukohu.
+Project for art exhibition at Village Arts, Kohukohu, Northland, New Zealand.
 
 Lighting design and build for an installation by New Zealand ceramic artist John Parker commencing 2 November 2019.
 
