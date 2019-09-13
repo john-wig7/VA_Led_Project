@@ -6,7 +6,7 @@ The working codes in this branch relate to coding the Arduino Due with the ardui
 
 The code needs to maintain a record of the current state of 12 colour channels at the same time, and another channel for reading the sensor. Each colour channel will change PWM values with each clock and the sensor will read a value. The smoothness of the led transitions are dependent on the efficiency of the updating code and the frequency of the clock.
 The example code here shows a mechanism for maintaining state values of each channel.
-Another design method that I wish to explore is creating an object class for each channel which can maintain its own state value with a method for incrementing the PWM for the objects own pin.
+Another design method that I wish to explore is creating an object class for each channel which can maintain its own state value with a method for incrementing the PWM for the object's designated ardnuino pin.
 
 **Colour perception
 
